@@ -6,7 +6,7 @@
         android:required="true" />
 
     <application
-        android:name=".GifApplication"
+        android:name="net.roy.GifApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -24,7 +24,7 @@
         </activity>
 
         <service
-            android:name=".GifWallpaperService"
+            android:name="net.roy.sv.GifWallpaperService"
             android:enabled="true"
             android:exported="true"
             android:label="@string/app_name"

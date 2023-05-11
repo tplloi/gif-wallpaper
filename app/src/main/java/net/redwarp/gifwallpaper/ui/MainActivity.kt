@@ -35,12 +35,12 @@ import androidx.core.view.WindowCompat
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import net.redwarp.gifwallpaper.GifApplication
-import net.redwarp.gifwallpaper.GifWallpaperService
+import net.roy.GifApplication
+import net.roy.sv.GifWallpaperService
 import net.redwarp.gifwallpaper.R
 import net.redwarp.gifwallpaper.renderer.DrawableMapper
 import net.redwarp.gifwallpaper.ui.setup.SetupModelImpl
-import net.redwarp.gifwallpaper.wallpaperActive
+import net.roy.ext.wallpaperActive
 
 const val EXTRA_PREVIEW_MODE = "android.service.wallpaper.PREVIEW_MODE"
 
