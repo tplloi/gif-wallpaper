@@ -1,19 +1,4 @@
-/* Copyright 2020 Benoit Vermont
- * Copyright 2020 GifWallpaper Contributors
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-package app.redwarp.markdown
+package app.roy
 
 import android.content.res.Configuration.UI_MODE_NIGHT_NO
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
@@ -329,6 +314,7 @@ fun Builder.appendMarkdownChildren(
                 appendMarkdownChildren(child, colors)
                 pop()
             }
+
             is TextNode -> append(child.literal)
             is Image -> appendInlineContent(TAG_IMAGE_URL, child.destination)
             is Emphasis -> {
@@ -336,22 +322,27 @@ fun Builder.appendMarkdownChildren(
                 appendMarkdownChildren(child, colors)
                 pop()
             }
+
             is StrongEmphasis -> {
                 pushStyle(SpanStyle(fontWeight = FontWeight.Bold))
                 appendMarkdownChildren(child, colors)
                 pop()
             }
+
             is Code -> {
                 pushStyle(TextStyle(fontFamily = FontFamily.Monospace).toSpanStyle())
                 append(child.literal)
                 pop()
             }
+
             is HardLineBreak -> {
                 append("\n")
             }
+
             is SoftLineBreak -> {
                 append(" ")
             }
+
             is Link -> {
                 val underline = SpanStyle(colors.primary, textDecoration = TextDecoration.Underline)
                 pushStyle(underline)
@@ -471,6 +462,7 @@ fun MDList(modifier: Modifier = Modifier, content: @Composable () -> Unit) {
                             placeable.block.placeRelative(alignment, y)
                             placeable.block.height
                         }
+
                         is MDListPlaceable.Solo -> {
                             placeable.block.placeRelative(0, y)
                             placeable.block.height
@@ -497,7 +489,7 @@ fun MDListRow(separator: String, content: @Composable BoxScope.() -> Unit) {
 fun Node.children(): NodeIterator = NodeIterator(this)
 
 class NodeIterator(node: Node) : Iterator<Node> {
-    var child: Node? = node.firstChild
+    private var child: Node? = node.firstChild
 
     override fun hasNext(): Boolean = child != null
 
