@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="about">"О приложении"</string>
-  <string name="activate">"Активировать"</string>
-  <string name="app_name">"GIF Живые Обои"</string>
-  <string name="back">"Назад"</string>
-  <string name="battery_saver">"Режим энергосбережения"</string>
-  <string name="change_color">"Сменить цвет"</string>
-  <string name="change_scale">"Масштаб"</string>
-  <string name="clear_gif">"Очистить GIF"</string>
-  <string name="click_the_open_gif_button">"Нажмите кнопку Открыть GIF"</string>
-  <string name="close">"Закрыть"</string>
-  <string name="error_wallpaper_chooser">"Невозможно запустить \"Выбор обоев\". Вы должны активировать GIF Live Wallpaper через меню \"Живые обои\"."</string>
-  <string name="loading">"Загрузка…"</string>
-  <string name="open_app">"Откройте приложение"</string>
-  <string name="open_gif">"Открыть GIF"</string>
-  <string name="pause_blayback_battery_saver">"Остановить GIF в режиме энергосбережения."</string>
-  <string name="pause_playback_running_hot">"Остановить GIF, когда телефон сильно нагревается."</string>
-  <string name="pick_a_color">"Выбор цвета"</string>
-  <string name="privacy">"Конфиденциальность"</string>
-  <string name="rotate">"Вращать"</string>
-  <string name="settings">"Настройки"</string>
-  <string name="thermal_throttle">"Защита от перегрева"</string>
+    <string name="about">"О приложении"</string>
+    <string name="activate">"Активировать"</string>
+    <string name="app_name">"GIF Живые Обои"</string>
+    <string name="back">"Назад"</string>
+    <string name="battery_saver">"Режим энергосбережения"</string>
+    <string name="change_color">"Сменить цвет"</string>
+    <string name="change_scale">"Масштаб"</string>
+    <string name="clear_gif">"Очистить GIF"</string>
+    <string name="click_the_open_gif_button">"Нажмите кнопку Открыть GIF"</string>
+    <string name="close">"Закрыть"</string>
+    <string name="error_wallpaper_chooser">"Невозможно запустить \"Выбор обоев\". Вы должны активировать GIF Live Wallpaper через меню \"Живые обои\"."</string>
+    <string name="loading">"Загрузка…"</string>
+    <string name="open_app">"Откройте приложение"</string>
+    <string name="open_gif">"Открыть GIF"</string>
+    <string name="pause_blayback_battery_saver">"Остановить GIF в режиме энергосбережения."</string>
+    <string name="pause_playback_running_hot">"Остановить GIF, когда телефон сильно нагревается."</string>
+    <string name="pick_a_color">"Выбор цвета"</string>
+    <string name="privacy">"Конфиденциальность"</string>
+    <string name="rotate">"Вращать"</string>
+    <string name="settings">"Настройки"</string>
+    <string name="thermal_throttle">"Защита от перегрева"</string>
 </resources>

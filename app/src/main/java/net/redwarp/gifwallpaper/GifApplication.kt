@@ -28,6 +28,7 @@ import net.redwarp.gifwallpaper.data.WallpaperSettings
 // and https://developer.android.com/kotlin/coroutines/coroutines-best-practices#create-coroutines-data-layer
 
 //TODO ic_launcher
+//TODO app color
 //TODO rate app
 //TODO share app
 //TODO more app
