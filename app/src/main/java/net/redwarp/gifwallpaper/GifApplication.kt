@@ -26,6 +26,15 @@ import net.redwarp.gifwallpaper.data.WallpaperSettings
 
 // See https://medium.com/androiddevelopers/coroutines-patterns-for-work-that-shouldnt-be-cancelled-e26c40f142ad
 // and https://developer.android.com/kotlin/coroutines/coroutines-best-practices#create-coroutines-data-layer
+
+//TODO ic_launcher
+//TODO rate app
+//TODO share app
+//TODO more app
+//TODo policy
+//TODO firebase
+//TODO ad
+//TODO ad id manifest
 class GifApplication : Application() {
 
     private val appScope = CoroutineScope(SupervisorJob())
