@@ -58,9 +58,8 @@ class GifWallpaperService : WallpaperService(), LifecycleOwner {
         dispatcher.onDestroy()
     }
 
-    override fun getLifecycle(): Lifecycle {
-        return dispatcher.lifecycle
-    }
+    override val lifecycle: Lifecycle
+        get() = dispatcher.lifecycle
 
     inner class GifEngine : Engine() {
         private var surfaceDrawableRenderer: SurfaceDrawableRenderer? = null
