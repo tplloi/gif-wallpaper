@@ -6,9 +6,9 @@ import android.os.StrictMode.VmPolicy
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
-import net.redwarp.gifwallpaper.AppSettings
+import net.roy.ext.AppSettings
 import net.redwarp.gifwallpaper.BuildConfig
-import net.redwarp.gifwallpaper.DataStoreAppSettings
+import net.roy.ext.DataStoreAppSettings
 import net.redwarp.gifwallpaper.data.FlowBasedModel
 import net.redwarp.gifwallpaper.data.WallpaperSettings
 

@@ -17,7 +17,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import net.redwarp.gifwallpaper.EngineLifecycleDispatcher
 import net.roy.GifApplication
 import net.redwarp.gifwallpaper.R
 import net.redwarp.gifwallpaper.renderer.DrawableMapper
