@@ -22,9 +22,9 @@ import net.redwarp.gifwallpaper.R
 import net.redwarp.gifwallpaper.renderer.DrawableMapper
 import net.redwarp.gifwallpaper.renderer.SurfaceDrawableRenderer
 import net.redwarp.gifwallpaper.renderer.createMiniature
-import net.redwarp.gifwallpaper.util.WallpaperColorsCompat
-import net.redwarp.gifwallpaper.util.toCompat
-import net.redwarp.gifwallpaper.util.toReal
+import net.roy.util.WallpaperColorsCompat
+import net.roy.util.toCompat
+import net.roy.util.toReal
 import net.roy.ext.WallpaperObserver
 
 class GifWallpaperService : WallpaperService(), LifecycleOwner {

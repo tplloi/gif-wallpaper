@@ -1,19 +1,4 @@
-/* Copyright 2020 Benoit Vermont
- * Copyright 2020 GifWallpaper Contributors
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-package net.redwarp.gifwallpaper.util
+package net.roy.util
 
 import android.content.Context
 import android.net.Uri
@@ -29,7 +14,10 @@ object FileUtils {
     /**
      * Copy a file from a Uri to a file in the application's directory.
      **/
-    suspend fun copyFileLocally(context: Context, uri: Uri): File? = withContext(Dispatchers.IO) {
+    suspend fun copyFileLocally(
+        context: Context,
+        uri: Uri
+    ): File? = withContext(Dispatchers.IO) {
         val localDir = context.filesDir
         val extension = MimeTypeMap.getFileExtensionFromUrl(uri.toString())
         val localFileName = UUID.randomUUID().toString().let {

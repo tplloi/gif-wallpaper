@@ -21,7 +21,7 @@ import app.redwarp.gif.decoder.Parser
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.withContext
-import net.redwarp.gifwallpaper.util.FileUtils
+import net.roy.util.FileUtils
 import java.io.File
 
 private const val FILE_SIZE_THRESHOLD = 5 * 1024 * 1024

@@ -29,7 +29,7 @@ import net.redwarp.gifwallpaper.data.NotSet
 import net.redwarp.gifwallpaper.data.WallpaperStatus
 import net.redwarp.gifwallpaper.renderer.DrawableProvider
 import net.redwarp.gifwallpaper.ui.rgbToColor
-import net.redwarp.gifwallpaper.util.isDark
+import net.roy.util.isDark
 
 interface SetupModel {
     val displayDarkIcons: Flow<Boolean>

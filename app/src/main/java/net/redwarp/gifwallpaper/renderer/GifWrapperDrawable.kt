@@ -28,9 +28,9 @@ import android.graphics.RectF
 import android.graphics.drawable.Animatable
 import android.graphics.drawable.Drawable
 import android.view.animation.AccelerateDecelerateInterpolator
-import net.redwarp.gifwallpaper.util.MatrixEvaluator
-import net.redwarp.gifwallpaper.util.setCenterCropRectInRect
-import net.redwarp.gifwallpaper.util.setCenterRectInRect
+import net.roy.util.MatrixEvaluator
+import net.roy.util.setCenterCropRectInRect
+import net.roy.util.setCenterRectInRect
 
 private const val ANIMATION_DURATION = 400L
 
