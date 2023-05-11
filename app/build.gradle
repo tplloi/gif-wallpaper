@@ -9,7 +9,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "net.redwarp.gifwallpaper"
+        applicationId "com.roy93group.gifwallpaper"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 74
@@ -17,7 +17,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         resourceConfigurations += ['en', 'fr', 'ru', 'de', 'es', 'it', 'zh', 'eu', 'tr']
-
     }
 
     buildFeatures {

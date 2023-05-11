@@ -35,6 +35,11 @@ import net.redwarp.gifwallpaper.data.WallpaperSettings
 //TODO firebase
 //TODO ad
 //TODO ad id manifest
+//TODO keystore
+
+//done
+//pkg name
+
 class GifApplication : Application() {
 
     private val appScope = CoroutineScope(SupervisorJob())
