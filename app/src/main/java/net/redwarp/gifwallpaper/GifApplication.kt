@@ -35,6 +35,7 @@ import net.redwarp.gifwallpaper.data.WallpaperSettings
 //TODO firebase
 //TODO ad
 //TODO ad id manifest
+//TODO proguard
 //TODO keystore
 
 //done
