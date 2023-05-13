@@ -17,15 +17,16 @@ import net.roy.db.WallpaperSettings
 //TODO share app
 //TODO more app
 //TODo policy
-//TODO firebase
-//TODO ad
 //TODO proguard
 //TODO keystore
-//TODO leak canary
+
+//TODO firebase
+//TODO ad
 
 //done
 //pkg name
 //ad id manifest
+//leak canary
 
 class GifApplication : Application() {
 
