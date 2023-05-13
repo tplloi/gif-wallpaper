@@ -20,7 +20,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
-import net.redwarp.gifwallpaper.R
+import net.roy.R
 
 @Composable
 fun BasicTopBar(modifier: Modifier = Modifier, title: String, navController: NavController) {

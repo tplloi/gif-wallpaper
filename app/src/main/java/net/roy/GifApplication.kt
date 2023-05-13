@@ -7,7 +7,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import net.roy.ext.AppSettings
-import net.redwarp.gifwallpaper.BuildConfig
 import net.roy.ext.DataStoreAppSettings
 import net.roy.db.FlowBasedModel
 import net.roy.db.WallpaperSettings
@@ -20,13 +19,13 @@ import net.roy.db.WallpaperSettings
 //TODo policy
 //TODO firebase
 //TODO ad
-//TODO ad id manifest
 //TODO proguard
 //TODO keystore
 //TODO leak canary
 
 //done
 //pkg name
+//ad id manifest
 
 class GifApplication : Application() {
 

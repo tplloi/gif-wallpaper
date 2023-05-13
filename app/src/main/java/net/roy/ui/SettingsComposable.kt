@@ -21,8 +21,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
+import net.roy.R
 import net.roy.ext.AppSettings
-import net.redwarp.gifwallpaper.R
 
 @Composable
 fun Setting(

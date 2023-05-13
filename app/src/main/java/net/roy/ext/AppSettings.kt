@@ -10,7 +10,7 @@ import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import net.redwarp.gifwallpaper.R
+import net.roy.R
 
 interface AppSettings {
     val powerSavingSettingFlow: Flow<Boolean>

@@ -58,7 +58,7 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion '1.4.0'
     }
-    namespace 'net.redwarp.gifwallpaper'
+    namespace 'net.roy'
 }
 
 spotless {

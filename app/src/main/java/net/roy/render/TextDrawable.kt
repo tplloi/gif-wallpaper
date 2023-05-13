@@ -16,7 +16,7 @@ import android.text.TextPaint
 import androidx.annotation.RequiresApi
 import androidx.compose.ui.unit.Density
 import androidx.core.content.ContextCompat
-import net.redwarp.gifwallpaper.R
+import net.roy.R
 import net.roy.ui.typography
 import kotlin.math.max
 

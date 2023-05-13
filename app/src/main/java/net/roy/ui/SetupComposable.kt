@@ -72,7 +72,7 @@ import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
-import net.redwarp.gifwallpaper.R
+import net.roy.R
 import net.roy.render.rememberGifDrawablePainter
 import net.roy.ui.setup.ColorPalette
 import net.roy.ui.setup.SetupModel

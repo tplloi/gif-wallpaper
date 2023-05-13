@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import net.redwarp.gifwallpaper.R
+import net.roy.R
 import net.roy.db.FlowBasedModel
 import net.roy.db.TranslationEvent
 import net.roy.db.WallpaperStatus
