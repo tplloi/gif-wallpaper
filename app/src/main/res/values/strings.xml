@@ -22,7 +22,7 @@
     <string name="rotate">"Rotate"</string>
     <string name="settings">"Settings"</string>
     <string name="thermal_throttle">"Thermal Mitigation"</string>
-    <string name="rate_app" tools:ignore="MissingTranslation">"Rare app"</string>
+    <string name="rate_app" tools:ignore="MissingTranslation">"Rate app"</string>
     <string name="more_app" tools:ignore="MissingTranslation">"More app"</string>
     <string name="share_app" tools:ignore="MissingTranslation">"Share app"</string>
 </resources>

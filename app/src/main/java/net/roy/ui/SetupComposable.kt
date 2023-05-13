@@ -2,7 +2,7 @@
 
 package net.roy.ui
 
-import android.content.Intent
+import android.app.Activity
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.net.Uri
 import androidx.activity.compose.ManagedActivityResultLauncher
@@ -73,13 +73,18 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
 import net.roy.R
+import net.roy.ext.moreApp
+import net.roy.ext.openBrowserPolicy
+import net.roy.ext.rateApp
+import net.roy.ext.shareApp
 import net.roy.render.rememberGifDrawablePainter
 import net.roy.ui.setup.ColorPalette
 import net.roy.ui.setup.SetupModel
 import kotlin.math.max
 
 // private const val PRIVACY_POLICY_URL = "https://redwarp.github.io/gif-wallpaper/privacy/"
-private const val PRIVACY_POLICY_URL = "https://loitp.notion.site/loitp/Privacy-Policy-319b1cd8783942fa8923d2a3c9bce60f"
+private const val PRIVACY_POLICY_URL =
+    "https://loitp.notion.site/loitp/Privacy-Policy-319b1cd8783942fa8923d2a3c9bce60f"
 
 @Composable
 fun ActionBar(
@@ -256,6 +261,7 @@ fun ActionMenu(
 ) {
     val scope = rememberCoroutineScope()
     val items = mutableListOf<OverflowAction>()
+    val context = LocalContext.current
     items.add(
         OverflowAction(stringResource(id = R.string.clear_gif)) {
             scope.launch {
@@ -277,27 +283,27 @@ fun ActionMenu(
     // )
     items.add(
         OverflowAction(stringResource(id = R.string.rate_app)) {
-
+            (context as Activity?)?.rateApp(context.packageName)
         },
     )
     items.add(
         OverflowAction(stringResource(id = R.string.more_app)) {
-
+            (context as Activity?)?.moreApp()
         },
     )
     items.add(
         OverflowAction(stringResource(id = R.string.share_app)) {
-
+            (context as Activity?)?.shareApp()
         },
     )
 
-    val context = LocalContext.current
     items.add(
         OverflowAction(stringResource(id = R.string.privacy)) {
-            val intent = Intent(Intent.ACTION_VIEW).apply {
-                data = Uri.parse(PRIVACY_POLICY_URL)
-            }
-            context.startActivity(intent)
+            // val intent = Intent(Intent.ACTION_VIEW).apply {
+            //     data = Uri.parse(PRIVACY_POLICY_URL)
+            // }
+            // context.startActivity(intent)
+            context.openBrowserPolicy()
         },
     )
 
