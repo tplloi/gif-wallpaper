@@ -9,7 +9,6 @@
     <string name="change_scale">"Масштаб"</string>
     <string name="clear_gif">"Очистить GIF"</string>
     <string name="click_the_open_gif_button">"Нажмите кнопку Открыть GIF"</string>
-    <string name="close">"Закрыть"</string>
     <string name="error_wallpaper_chooser">"Невозможно запустить \"Выбор обоев\". Вы должны активировать GIF Live Wallpaper через меню \"Живые обои\"."</string>
     <string name="loading">"Загрузка…"</string>
     <string name="open_app">"Откройте приложение"</string>

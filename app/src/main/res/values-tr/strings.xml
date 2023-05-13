@@ -9,7 +9,6 @@
     <string name="change_scale">"Ölçeği değiştir"</string>
     <string name="clear_gif">"GIFi temizle"</string>
     <string name="click_the_open_gif_button">"\"GIF aç\" düğmesine basın."</string>
-    <string name="close">"Kapat"</string>
     <string name="error_wallpaper_chooser">"Duvar kağıdı seçicisi başlatılamadı. Yine de, GIF Canlı Duvar Kağıdını ana ekran duvar kağıdı seçicinizden \"Canlı Duvar Kağıtları\"nı seçerek aktif edebilirsiniz."</string>
     <string name="loading" tools:ignore="TypographyEllipsis">"Yükleniyor..."</string>
     <string name="open_app">"Başlamak için GIF Canlı Duvar Kağıdı uygulamasını açıp favori GIF'inizi kurun."</string>

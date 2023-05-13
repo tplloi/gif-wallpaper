@@ -9,7 +9,6 @@
     <string name="change_scale">"Ratio"</string>
     <string name="clear_gif">"Supprimer le GIF"</string>
     <string name="click_the_open_gif_button">"Clickez sur le boutton \"Choisir un GIF\"."</string>
-    <string name="close">"Fermer"</string>
     <string name="error_wallpaper_chooser">"Impossible de lancer le menu des fonds d'écrans.
         Pour activer le \"GIF Live Wallpaper\", sélectionnez le directement
         depuis votre écran d'accueil."</string>

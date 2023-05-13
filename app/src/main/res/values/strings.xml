@@ -9,7 +9,6 @@
     <string name="change_scale">"Change scale"</string>
     <string name="clear_gif">"Clear GIF"</string>
     <string name="click_the_open_gif_button">"Click the \"Open GIF\" button."</string>
-    <string name="close">"Close"</string>
     <string name="error_wallpaper_chooser">"Couldn't launch wallpaper chooser. You can still activate
         the GIF Live Wallpaper by choosing 'Live Wallpapers'
         in your home screen wallpaper picker."</string>

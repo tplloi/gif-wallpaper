@@ -9,7 +9,6 @@
     <string name="change_scale">"Eskala aldatu"</string>
     <string name="clear_gif">"GIFa kendu"</string>
     <string name="click_the_open_gif_button">"Klikatu \"GIFa ireki\" botoia"</string>
-    <string name="close">"Itxi"</string>
     <string name="error_wallpaper_chooser">"Ezin izan da horma-paper hautatzailea abiarazi. Hala ere GIF horma-paper
 dinamikoa aktibatu dezakezu zure hasierako pantailaren horma-paper
 hautatzailean 'Horma-paper dinamikoak' hautatuz."</string>

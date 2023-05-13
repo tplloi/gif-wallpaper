@@ -9,7 +9,6 @@
     <string name="change_scale">"Ridimensiona"</string>
     <string name="clear_gif">"Cancella GIF"</string>
     <string name="click_the_open_gif_button">"\"Scegli GIF\""</string>
-    <string name="close">"Chiudi"</string>
     <string name="error_wallpaper_chooser">"Impossibile avviare il selettore di sfondi. Puoi comunque attivare
 il tuo sfondo animato scegliendo 'Live Wallpapers' 
 nel selettore di sfondi del tuo launcher."</string>
