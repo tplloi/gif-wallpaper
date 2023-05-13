@@ -11,10 +11,10 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-val Orange = Color(0xffd8aa8e)
-val DarkOrange = Color(0xffa57b60)
-val LightGreen = Color(0xffbcd88e)
-val Green = Color(0xff8ba660)
+val Orange = Color(0xffF44336)
+val DarkOrange = Color(0xffF44336)
+val LightGreen = Color(0xFF8BC34A)
+val Green = Color(0xFF8BC34A)
 
 private val darkColors = darkColors(
     primary = Orange,
