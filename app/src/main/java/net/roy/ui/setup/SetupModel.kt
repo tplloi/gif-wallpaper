@@ -8,9 +8,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import net.redwarp.gifwallpaper.data.ColorScheme
-import net.redwarp.gifwallpaper.data.FlowBasedModel
-import net.redwarp.gifwallpaper.data.NotSet
+import net.roy.db.ColorScheme
+import net.roy.db.FlowBasedModel
+import net.roy.db.NotSet
 import net.roy.db.WallpaperStatus
 import net.roy.render.DrawableProvider
 import net.roy.ui.rgbToColor

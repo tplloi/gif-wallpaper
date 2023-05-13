@@ -1,4 +1,4 @@
-package net.redwarp.gifwallpaper.data
+package net.roy.db
 
 import android.content.Context
 import android.graphics.Color
@@ -17,21 +17,23 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
-import net.roy.db.Translation
 import net.roy.render.Rotation
 import net.roy.render.ScaleType
 import java.io.File
 
-private const val SHARED_PREF_NAME = "wallpaper_pref"
-private const val KEY_WALLPAPER_BACKGROUND_COLOR = "wallpaper_background_color"
-private const val KEY_WALLPAPER_ROTATION = "wallpaper_rotation"
-private const val KEY_WALLPAPER_TRANSLATE_X = "wallpaper_translate_x"
-private const val KEY_WALLPAPER_TRANSLATE_Y = "wallpaper_translate_y"
-private const val KEY_WALLPAPER_SCALE_TYPE = "wallpaper_scale_type"
-private const val KEY_WALLPAPER_URI = "wallpaper_uri"
-
 @Suppress("PrivatePropertyName")
-class WallpaperSettings(private val context: Context, ioScope: CoroutineScope) {
+class WallpaperSettings(
+    private val context: Context,
+    ioScope: CoroutineScope
+) {
+    private val SHARED_PREF_NAME = "wallpaper_pref"
+    private val KEY_WALLPAPER_BACKGROUND_COLOR = "wallpaper_background_color"
+    private val KEY_WALLPAPER_ROTATION = "wallpaper_rotation"
+    private val KEY_WALLPAPER_TRANSLATE_X = "wallpaper_translate_x"
+    private val KEY_WALLPAPER_TRANSLATE_Y = "wallpaper_translate_y"
+    private val KEY_WALLPAPER_SCALE_TYPE = "wallpaper_scale_type"
+    private val KEY_WALLPAPER_URI = "wallpaper_uri"
+
     private val WALLPAPER_ROTATION = intPreferencesKey(KEY_WALLPAPER_ROTATION)
     private val WALLPAPER_BACKGROUND_COLOR = intPreferencesKey(KEY_WALLPAPER_BACKGROUND_COLOR)
     private val WALLPAPER_TRANSLATE_X = floatPreferencesKey(KEY_WALLPAPER_TRANSLATE_X)

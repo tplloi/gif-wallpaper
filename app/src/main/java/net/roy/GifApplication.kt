@@ -9,8 +9,8 @@ import kotlinx.coroutines.SupervisorJob
 import net.roy.ext.AppSettings
 import net.redwarp.gifwallpaper.BuildConfig
 import net.roy.ext.DataStoreAppSettings
-import net.redwarp.gifwallpaper.data.FlowBasedModel
-import net.redwarp.gifwallpaper.data.WallpaperSettings
+import net.roy.db.FlowBasedModel
+import net.roy.db.WallpaperSettings
 
 //TODO ic_launcher
 //TODO app color

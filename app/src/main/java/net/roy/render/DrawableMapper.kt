@@ -15,7 +15,7 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import net.redwarp.gifwallpaper.R
-import net.redwarp.gifwallpaper.data.FlowBasedModel
+import net.roy.db.FlowBasedModel
 import net.roy.db.TranslationEvent
 import net.roy.db.WallpaperStatus
 import kotlin.contracts.ExperimentalContracts

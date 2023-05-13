@@ -6,7 +6,6 @@ import app.redwarp.gif.decoder.Parser
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.withContext
-import net.redwarp.gifwallpaper.data.WallpaperSettings
 import net.roy.util.FileUtils
 import java.io.File
 

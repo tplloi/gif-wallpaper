@@ -1,19 +1,4 @@
-/* Copyright 2020 Benoit Vermont
- * Copyright 2020 GifWallpaper Contributors
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-package net.redwarp.gifwallpaper.data
+package net.roy.db
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -42,18 +27,9 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import net.roy.db.GifLoader
-import net.roy.db.Translation
-import net.roy.db.TranslationEvent
-import net.roy.db.WallpaperStatus
 import net.roy.ext.AppSettings
 import net.roy.render.Rotation
 import net.roy.render.ScaleType
-
-/**
- * Arbitrary delay to avoid over-requesting colors refresh.
- */
-private const val REFRESH_DELAY = 200L
 
 class FlowBasedModel(
     context: Context,
@@ -61,6 +37,11 @@ class FlowBasedModel(
     private val wallpaperSettings: WallpaperSettings,
     appSettings: AppSettings,
 ) {
+    /**
+     * Arbitrary delay to avoid over-requesting colors refresh.
+     */
+    private val REFRESH_DELAY = 200L
+
     private val _wallpaperStatusFlow = MutableSharedFlow<WallpaperStatus>(
         replay = 1,
         onBufferOverflow = BufferOverflow.DROP_OLDEST,
