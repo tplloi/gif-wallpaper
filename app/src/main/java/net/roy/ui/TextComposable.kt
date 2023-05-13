@@ -15,8 +15,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import app.roy.MDDocument
-import net.redwarp.gifwallpaper.ui.BasicTopBar
-import net.redwarp.gifwallpaper.ui.UpdateStatusBarColors
 import java.io.InputStream
 
 @Composable

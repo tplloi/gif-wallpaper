@@ -74,11 +74,8 @@ import androidx.navigation.NavController
 import kotlinx.coroutines.launch
 import net.redwarp.gifwallpaper.R
 import net.redwarp.gifwallpaper.renderer.rememberGifDrawablePainter
-import net.redwarp.gifwallpaper.ui.ColorPicker
-import net.redwarp.gifwallpaper.ui.Routes
-import net.redwarp.gifwallpaper.ui.UpdateStatusBarColors
-import net.redwarp.gifwallpaper.ui.setup.ColorPalette
-import net.redwarp.gifwallpaper.ui.setup.SetupModel
+import net.roy.ui.setup.ColorPalette
+import net.roy.ui.setup.SetupModel
 import kotlin.math.max
 
 // private const val PRIVACY_POLICY_URL = "https://redwarp.github.io/gif-wallpaper/privacy/"
