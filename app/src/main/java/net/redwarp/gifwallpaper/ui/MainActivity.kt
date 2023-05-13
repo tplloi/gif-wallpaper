@@ -41,6 +41,9 @@ import net.redwarp.gifwallpaper.R
 import net.redwarp.gifwallpaper.renderer.DrawableMapper
 import net.redwarp.gifwallpaper.ui.setup.SetupModelImpl
 import net.roy.ext.wallpaperActive
+import net.roy.ui.AppTheme
+import net.roy.ui.MarkdownUi
+import net.roy.ui.SetupUi
 
 const val EXTRA_PREVIEW_MODE = "android.service.wallpaper.PREVIEW_MODE"
 

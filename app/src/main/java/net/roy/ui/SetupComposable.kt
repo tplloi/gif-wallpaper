@@ -1,21 +1,6 @@
-/* Copyright 2020 Benoit Vermont
- * Copyright 2020 GifWallpaper Contributors
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 @file:OptIn(ExperimentalMaterialApi::class)
 
-package net.redwarp.gifwallpaper.ui
+package net.roy.ui
 
 import android.content.Intent
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
@@ -89,11 +74,15 @@ import androidx.navigation.NavController
 import kotlinx.coroutines.launch
 import net.redwarp.gifwallpaper.R
 import net.redwarp.gifwallpaper.renderer.rememberGifDrawablePainter
+import net.redwarp.gifwallpaper.ui.ColorPicker
+import net.redwarp.gifwallpaper.ui.Routes
+import net.redwarp.gifwallpaper.ui.UpdateStatusBarColors
 import net.redwarp.gifwallpaper.ui.setup.ColorPalette
 import net.redwarp.gifwallpaper.ui.setup.SetupModel
 import kotlin.math.max
 
-private const val PRIVACY_POLICY_URL = "https://redwarp.github.io/gif-wallpaper/privacy/"
+// private const val PRIVACY_POLICY_URL = "https://redwarp.github.io/gif-wallpaper/privacy/"
+private const val PRIVACY_POLICY_URL = "https://loitp.notion.site/loitp/Privacy-Policy-319b1cd8783942fa8923d2a3c9bce60f"
 
 @Composable
 fun ActionBar(
@@ -126,7 +115,7 @@ fun ActionBar(
             text = stringResource(id = R.string.change_scale),
             enabled = isWallpaperSet,
 
-        ) {
+            ) {
             scope.launch {
                 setupModel.setNextScale()
             }

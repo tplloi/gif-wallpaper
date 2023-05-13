@@ -23,6 +23,7 @@ import net.redwarp.gifwallpaper.data.WallpaperSettings
 //TODO ad id manifest
 //TODO proguard
 //TODO keystore
+//TODO leak canary
 
 //done
 //pkg name

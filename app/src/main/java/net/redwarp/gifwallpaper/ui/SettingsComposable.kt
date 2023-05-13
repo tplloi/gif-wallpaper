@@ -38,6 +38,7 @@ import androidx.navigation.NavController
 import kotlinx.coroutines.launch
 import net.roy.ext.AppSettings
 import net.redwarp.gifwallpaper.R
+import net.roy.ui.AppTheme
 
 @Composable
 fun Setting(

@@ -32,7 +32,7 @@ import androidx.annotation.RequiresApi
 import androidx.compose.ui.unit.Density
 import androidx.core.content.ContextCompat
 import net.redwarp.gifwallpaper.R
-import net.redwarp.gifwallpaper.ui.typography
+import net.roy.ui.typography
 import kotlin.math.max
 
 class TextDrawable(context: Context, private val text: String) : Drawable() {
