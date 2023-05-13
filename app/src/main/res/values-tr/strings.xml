@@ -2,7 +2,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="about">"Hakkında"</string>
     <string name="activate">"Aktifleştir"</string>
-    <string name="app_name">"GIF Canlı Duvar Kağıdı"</string>
     <string name="back">"Geri Dön"</string>
     <string name="battery_saver">"Güç Tasarrufu"</string>
     <string name="change_color">"Rengi değiştir"</string>

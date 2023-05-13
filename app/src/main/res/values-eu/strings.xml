@@ -2,7 +2,6 @@
 <resources>
     <string name="about">"Honi buruz"</string>
     <string name="activate">"Aktibatu"</string>
-    <string name="app_name">"GIF horma-paper dinamikoa"</string>
     <string name="back">"Atzera"</string>
     <string name="battery_saver">"Bateria aurrezlea"</string>
     <string name="change_color">"Kolorea aldatu"</string>

@@ -2,7 +2,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="about">"About"</string>
     <string name="activate">"Activate"</string>
-    <string name="app_name">"GIF Live Wallpaper"</string>
     <string name="back">"Back"</string>
     <string name="battery_saver">"Battery Saver"</string>
     <string name="change_color">"Change color"</string>

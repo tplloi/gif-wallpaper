@@ -11,9 +11,6 @@ import net.roy.ext.DataStoreAppSettings
 import net.roy.db.FlowBasedModel
 import net.roy.db.WallpaperSettings
 
-//TODO proguard
-//TODO keystore
-
 //TODO firebase
 //TODO ad
 
@@ -27,6 +24,8 @@ import net.roy.db.WallpaperSettings
 //rate app
 //share app
 //more app
+//proguard
+//keystore
 
 class GifApplication : Application() {
 

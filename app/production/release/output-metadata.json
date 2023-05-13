@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.roy93group.gifwallpaper",
+  "variantName": "productionRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 74,
+      "versionName": "2.2.0",
+      "outputFile": "com.roy93group.gifwallpaperrelease_2.2.0_74.apk"
+    }
+  ],
+  "elementType": "File"
+}

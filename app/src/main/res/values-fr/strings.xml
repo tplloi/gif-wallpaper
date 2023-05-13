@@ -2,7 +2,6 @@
 <resources>
     <string name="about">"A propos"</string>
     <string name="activate">"Activer"</string>
-    <string name="app_name">"GIF Live Wallpaper"</string>
     <string name="back">"Retour"</string>
     <string name="battery_saver">"Économiseur de batterie"</string>
     <string name="change_color">"Couleur"</string>
