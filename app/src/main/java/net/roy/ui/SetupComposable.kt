@@ -129,7 +129,7 @@ fun ActionBar(
         }
 
         ActionButton(
-            icon = R.drawable.ic_color_lens,
+            icon = R.drawable.ic_color_lens_on,
             text = stringResource(id = R.string.change_color),
             enabled = hasColor,
             onClick = onChangeColorClick,
@@ -518,7 +518,7 @@ fun ActionBarPreview() {
             ) {}
 
             ActionButton(
-                icon = R.drawable.ic_color_lens,
+                icon = R.drawable.ic_color_lens_on,
                 text = stringResource(id = R.string.change_color),
             ) {}
         }
