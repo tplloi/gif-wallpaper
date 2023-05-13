@@ -23,7 +23,7 @@ import androidx.navigation.compose.rememberNavController
 import net.roy.GifApplication
 import net.roy.sv.GifWallpaperService
 import net.redwarp.gifwallpaper.R
-import net.redwarp.gifwallpaper.renderer.DrawableMapper
+import net.roy.render.DrawableMapper
 import net.roy.ui.setup.SetupModelImpl
 import net.roy.ext.wallpaperActive
 

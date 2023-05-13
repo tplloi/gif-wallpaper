@@ -73,7 +73,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
 import net.redwarp.gifwallpaper.R
-import net.redwarp.gifwallpaper.renderer.rememberGifDrawablePainter
+import net.roy.render.rememberGifDrawablePainter
 import net.roy.ui.setup.ColorPalette
 import net.roy.ui.setup.SetupModel
 import kotlin.math.max

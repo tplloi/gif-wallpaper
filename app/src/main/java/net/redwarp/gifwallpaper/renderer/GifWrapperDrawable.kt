@@ -19,8 +19,6 @@ import net.roy.util.MatrixEvaluator
 import net.roy.util.setCenterCropRectInRect
 import net.roy.util.setCenterRectInRect
 
-private const val ANIMATION_DURATION = 400L
-
 class GifWrapperDrawable(
     drawable: Drawable,
     backgroundColor: Int = 0,
@@ -29,6 +27,8 @@ class GifWrapperDrawable(
     translation: Pair<Float, Float> = 0f to 0f,
     shouldPlay: Boolean = false,
 ) : Drawable(), Animatable {
+
+    private val ANIMATION_DURATION = 400L
     private val state =
         GifWrapperState(drawable, backgroundColor, scaleType, rotation, translation, shouldPlay)
 
@@ -77,7 +77,10 @@ class GifWrapperDrawable(
         invalidateSelf()
     }
 
-    fun setScaledType(scaleType: ScaleType, animated: Boolean) {
+    fun setScaledType(
+        scaleType: ScaleType,
+        animated: Boolean
+    ) {
         this.state.scaleType = scaleType
         if (animated) {
             transformMatrix()
@@ -86,7 +89,10 @@ class GifWrapperDrawable(
         }
     }
 
-    fun setRotation(rotation: Rotation, animated: Boolean) {
+    fun setRotation(
+        rotation: Rotation,
+        animated: Boolean
+    ) {
         this.state.rotation = rotation
         if (animated) {
             transformMatrix()
@@ -95,7 +101,11 @@ class GifWrapperDrawable(
         }
     }
 
-    fun setTranslate(translateX: Float, translateY: Float, animated: Boolean) {
+    fun setTranslate(
+        translateX: Float,
+        translateY: Float,
+        animated: Boolean
+    ) {
         this.state.translation = translateX to translateY
 
         if (animated) {
@@ -105,7 +115,10 @@ class GifWrapperDrawable(
         }
     }
 
-    fun postTranslate(translateX: Float, translateY: Float) {
+    fun postTranslate(
+        translateX: Float,
+        translateY: Float
+    ) {
         matrixAnimator?.cancel()
 
         state.translation =
@@ -171,7 +184,12 @@ class GifWrapperDrawable(
         return state.drawable.intrinsicHeight
     }
 
-    override fun setBounds(left: Int, top: Int, right: Int, bottom: Int) {
+    override fun setBounds(
+        left: Int,
+        top: Int,
+        right: Int,
+        bottom: Int
+    ) {
         super.setBounds(left, top, right, bottom)
 
         updateMatrixAndInvalidate()
@@ -179,7 +197,10 @@ class GifWrapperDrawable(
 
     override fun getConstantState(): ConstantState = state
 
-    override fun setVisible(visible: Boolean, restart: Boolean): Boolean {
+    override fun setVisible(
+        visible: Boolean,
+        restart: Boolean
+    ): Boolean {
         return state.drawable.setVisible(visible, restart)
     }
 
