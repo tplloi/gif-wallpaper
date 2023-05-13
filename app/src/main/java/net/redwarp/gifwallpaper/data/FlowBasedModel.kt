@@ -43,8 +43,8 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import net.roy.ext.AppSettings
-import net.redwarp.gifwallpaper.renderer.Rotation
-import net.redwarp.gifwallpaper.renderer.ScaleType
+import net.roy.render.Rotation
+import net.roy.render.ScaleType
 
 /**
  * Arbitrary delay to avoid over-requesting colors refresh.

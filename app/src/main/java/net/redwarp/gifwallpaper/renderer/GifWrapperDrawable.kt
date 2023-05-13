@@ -1,18 +1,3 @@
-/* Copyright 2020 Benoit Vermont
- * Copyright 2020 GifWallpaper Contributors
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package net.redwarp.gifwallpaper.renderer
 
 import android.animation.ValueAnimator
@@ -28,6 +13,8 @@ import android.graphics.RectF
 import android.graphics.drawable.Animatable
 import android.graphics.drawable.Drawable
 import android.view.animation.AccelerateDecelerateInterpolator
+import net.roy.render.Rotation
+import net.roy.render.ScaleType
 import net.roy.util.MatrixEvaluator
 import net.roy.util.setCenterCropRectInRect
 import net.roy.util.setCenterRectInRect
@@ -210,14 +197,19 @@ class GifWrapperDrawable(
         when (scaleType) {
             ScaleType.FIT_CENTER ->
                 matrix.setRectToRect(gifRect, canvasRect, Matrix.ScaleToFit.CENTER)
+
             ScaleType.FIT_END ->
                 matrix.setRectToRect(gifRect, canvasRect, Matrix.ScaleToFit.END)
+
             ScaleType.FIT_START ->
                 matrix.setRectToRect(gifRect, canvasRect, Matrix.ScaleToFit.START)
+
             ScaleType.FIT_XY ->
                 matrix.setRectToRect(gifRect, canvasRect, Matrix.ScaleToFit.FILL)
+
             ScaleType.CENTER ->
                 matrix.setCenterRectInRect(gifRect, canvasRect)
+
             ScaleType.CENTER_CROP ->
                 matrix.setCenterCropRectInRect(gifRect, canvasRect)
         }
@@ -232,10 +224,12 @@ class GifWrapperDrawable(
                     val scale = gifRect.width() / gifRect.height()
                     matrix.postScale(scale, scale, workArray[0], workArray[1])
                 }
+
                 ScaleType.FIT_XY -> {
                     val scale = canvasRect.width() / canvasRect.height()
                     matrix.postScale(scale, 1f / scale, workArray[0], workArray[1])
                 }
+
                 else -> Unit
             }
         }

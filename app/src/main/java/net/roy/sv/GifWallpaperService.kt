@@ -20,7 +20,7 @@ import kotlinx.coroutines.withContext
 import net.roy.GifApplication
 import net.redwarp.gifwallpaper.R
 import net.redwarp.gifwallpaper.renderer.DrawableMapper
-import net.redwarp.gifwallpaper.renderer.SurfaceDrawableRenderer
+import net.roy.render.SurfaceDrawableRenderer
 import net.redwarp.gifwallpaper.renderer.createMiniature
 import net.roy.util.WallpaperColorsCompat
 import net.roy.util.toCompat

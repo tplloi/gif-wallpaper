@@ -32,8 +32,8 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
-import net.redwarp.gifwallpaper.renderer.Rotation
-import net.redwarp.gifwallpaper.renderer.ScaleType
+import net.roy.render.Rotation
+import net.roy.render.ScaleType
 import java.io.File
 
 private const val SHARED_PREF_NAME = "wallpaper_pref"
