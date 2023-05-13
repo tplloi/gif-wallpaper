@@ -270,9 +270,24 @@ fun ActionMenu(
             },
         )
     }
+    // items.add(
+    //     OverflowAction(stringResource(id = R.string.about)) {
+    //         navController.navigate(Routes.ABOUT)
+    //     },
+    // )
     items.add(
-        OverflowAction(stringResource(id = R.string.about)) {
-            navController.navigate(Routes.ABOUT)
+        OverflowAction(stringResource(id = R.string.rate_app)) {
+
+        },
+    )
+    items.add(
+        OverflowAction(stringResource(id = R.string.more_app)) {
+
+        },
+    )
+    items.add(
+        OverflowAction(stringResource(id = R.string.share_app)) {
+
         },
     )
 

@@ -11,10 +11,6 @@ import net.roy.ext.DataStoreAppSettings
 import net.roy.db.FlowBasedModel
 import net.roy.db.WallpaperSettings
 
-//TODO rate app
-//TODO share app
-//TODO more app
-//TODo policy
 //TODO proguard
 //TODO keystore
 
@@ -27,6 +23,10 @@ import net.roy.db.WallpaperSettings
 //leak canary
 //ic_launcher
 //app color
+//policy
+//rate app
+//share app
+//more app
 
 class GifApplication : Application() {
 

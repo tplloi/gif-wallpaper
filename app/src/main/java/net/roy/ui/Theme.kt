@@ -7,26 +7,27 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Color.Companion.Green
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 val Orange = Color(0xffF44336)
 val DarkOrange = Color(0xffF44336)
-val LightGreen = Color(0xFF8BC34A)
-val Green = Color(0xFF8BC34A)
+// val LightGreen = Color(0xFF8BC34A)
+// val Green = Color(0xFF8BC34A)
 
 private val darkColors = darkColors(
     primary = Orange,
     primaryVariant = DarkOrange,
-    secondary = LightGreen,
-    secondaryVariant = Green,
+    secondary = Orange,
+    secondaryVariant = DarkOrange,
 )
 private val lightColors = lightColors(
     primary = Orange,
     primaryVariant = DarkOrange,
-    secondary = LightGreen,
-    secondaryVariant = Green,
+    secondary = Orange,
+    secondaryVariant = DarkOrange,
 )
 val typography = Typography(
     h1 = TextStyle(
