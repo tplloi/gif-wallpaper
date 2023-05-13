@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.map
 import net.redwarp.gifwallpaper.data.ColorScheme
 import net.redwarp.gifwallpaper.data.FlowBasedModel
 import net.redwarp.gifwallpaper.data.NotSet
-import net.redwarp.gifwallpaper.data.WallpaperStatus
+import net.roy.db.WallpaperStatus
 import net.roy.render.DrawableProvider
 import net.roy.ui.rgbToColor
 import net.roy.util.isDark

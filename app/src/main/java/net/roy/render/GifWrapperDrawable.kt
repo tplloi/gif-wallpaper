@@ -1,4 +1,4 @@
-package net.redwarp.gifwallpaper.renderer
+package net.roy.render
 
 import android.animation.ValueAnimator
 import android.graphics.Canvas
@@ -13,8 +13,6 @@ import android.graphics.RectF
 import android.graphics.drawable.Animatable
 import android.graphics.drawable.Drawable
 import android.view.animation.AccelerateDecelerateInterpolator
-import net.roy.render.Rotation
-import net.roy.render.ScaleType
 import net.roy.util.MatrixEvaluator
 import net.roy.util.setCenterCropRectInRect
 import net.roy.util.setCenterRectInRect
