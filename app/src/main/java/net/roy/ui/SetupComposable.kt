@@ -5,6 +5,7 @@ package net.roy.ui
 import android.app.Activity
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.net.Uri
+import android.widget.Toast
 import androidx.activity.compose.ManagedActivityResultLauncher
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -72,9 +73,11 @@ import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
+import net.roy.BuildConfig
 import net.roy.R
 import net.roy.ext.moreApp
 import net.roy.ext.openBrowserPolicy
+import net.roy.ext.openUrlInBrowser
 import net.roy.ext.rateApp
 import net.roy.ext.shareApp
 import net.roy.render.rememberGifDrawablePainter
@@ -298,11 +301,21 @@ fun ActionMenu(
     )
 
     items.add(
+        OverflowAction(stringResource(id = R.string.github)) {
+            if (BuildConfig.DEBUG) {
+                context.openUrlInBrowser("https://github.com/tplloi/gif-wallpaper/tree/dev")
+            } else {
+                Toast.makeText(
+                    /* context = */ context,
+                    /* text = */ "This feature is only available in debug mode",
+                    /* duration = */ Toast.LENGTH_SHORT
+                ).show()
+            }
+        },
+    )
+
+    items.add(
         OverflowAction(stringResource(id = R.string.privacy)) {
-            // val intent = Intent(Intent.ACTION_VIEW).apply {
-            //     data = Uri.parse(PRIVACY_POLICY_URL)
-            // }
-            // context.startActivity(intent)
             context.openBrowserPolicy()
         },
     )
